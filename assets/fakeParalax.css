@@ -2,7 +2,7 @@
    Exact image link in other folder*/
 
 .bkgrdImg {
-    background-image: url('nebula-13.jpg');
+    background-image: url('background.jpg');
     height: 90vh;
     opacity: 0.7;
     background-attachment: fixed;
