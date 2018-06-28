@@ -1,14 +1,13 @@
 body {
-    background-color: #031634;
+    background-color: #343838;
 }
 
 h1 {
-    color: #036564;
-    background-color: #031634;
+    color: #00DFFC;
 }
 
 a, h3, h5 {
-    color: #CDB380;
+    color: #00DFFC;
 }
 
 a {
@@ -16,35 +15,25 @@ a {
 }
 
 p {
-  color: #E8DDCB;
+  color: #00B4CC;
   font-size: 18px;
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 footer, nav, ul
 {
-    background-color: #033649;
+    background-color: #005F6B;
 }
 
 #headerPadding {
     cursor: pointer;
     padding: 10px;
+    background-color: #005F6B;
 }
 
 #settings {    
     cursor: pointer;
 	width:10%;
-}
-
-#cookie {
-    color:cadetblue;
-}
-
-#myCarousel {
-    background-color: #033649;
-    @media only screen and (min-width:601px) {
-        width: 50%;
-    }
 }
 
 .button {
@@ -57,136 +46,4 @@ footer, nav, ul
 
 .w3-hover-opacity {
 	cursor: pointer;
-}
-
-
-/* Dropdown section*/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-/* Login Style */
-/* Full-width input fields */
-
-input[type=text], input[type=password] {
-    width: 70%;
-    padding: 12px 10px;
-    margin: 10px 5px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Style for the cancel button
-.cancelbtn {
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    padding: 18px;
-    background-color: #f44336;
-}
-
-Doesnt seem to be needed but Just incase Ill leave it here
-
-/* Center the image and position the close button */
-
-.container {
-    padding: 8px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */        
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-.modalConsent {
-    position: fixed; 
-    z-index: 1;
-    width: 38%;
-    margin-left: 60%;
-    
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin-top: 10%;
-    margin-left: 5%; /* 5% from the top, 15% from the bottom and centered */
-    border: solid;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.modal-contentConsent {
-}
-
-/* The Close Button (x) */
-.close,
-.closeConsent{
-
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.close{
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-}
-
-.close:hover,
-.close:focus,
-.closeConsent:hover,
-.closeConsent:focus{
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
 }
