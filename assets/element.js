@@ -2,7 +2,6 @@
 $(document).ready(function () {
 	"use strict";
 	$("#gHeader").load("/assets/navbar.html");
-	$("#gFooter").load("/assets/footer.html");
 	
 	$(".contact").hide();
 	
