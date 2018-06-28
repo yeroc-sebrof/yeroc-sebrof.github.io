@@ -1,9 +1,10 @@
 //JQ
 $(document).ready(function () {
 	"use strict";
-	$(".contact").hide();
 	$("#gHeader").load("/assets/navbar.html");
 	$("#gFooter").load("/assets/footer.html");
+	
+	$(".contact").hide();
 	
 	$("#contact").click(function () {
 		$(".contact").toggle(500);
