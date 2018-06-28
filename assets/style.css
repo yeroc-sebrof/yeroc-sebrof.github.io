@@ -29,6 +29,7 @@ footer, nav, ul
     cursor: pointer;
     padding: 10px;
     background-color: #005F6B;
+    opacity: 0.95;
 }
 
 #settings {    
