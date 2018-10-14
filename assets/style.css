@@ -26,13 +26,14 @@ footer, nav, ul
 }
 
 #headerPadding {
+    border-radius: 6px;
     cursor: pointer;
     padding: 10px;
     background-color: #005F6B;
     opacity: 0.95;
 }
 
-#settings {    
+#settings {
     cursor: pointer;
 	width:10%;
 }
