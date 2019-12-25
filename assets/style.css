@@ -35,7 +35,7 @@ footer, nav, ul
 
 #settings {
     cursor: pointer;
-	width:10%;
+    width:10%;
 }
 
 .button {
@@ -43,9 +43,9 @@ footer, nav, ul
 }
 
 .w3-wide {
-	letter-spacing: 10px;
-	}
+    letter-spacing: 10px;
+    }
 
 .w3-hover-opacity {
-	cursor: pointer;
+    cursor: pointer;
 }
