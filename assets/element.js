@@ -1,7 +1,7 @@
 //JQ
 $(document).ready(function () {
     "use strict";
-    $("#gHeader").load("//assets/navbar.html");
+    $("#gHeader").load("/assets/navbar.html");
 
     $(".contact").hide();
 
