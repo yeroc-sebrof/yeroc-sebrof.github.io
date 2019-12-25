@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="/assets/style.css">
 <link rel="stylesheet" type="text/css" href="/assets/fakeParalax.css"> <!-- I consider this a fake paralax as it doesnt move slower to the foreground so I would look into real paralax at a later date to improve this-->
+<link rel="stylesheet" type="text/css" href="/assets/collapsable.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -37,100 +38,89 @@
             I hope this could become a complete listing of my cool projects and hopefully a nice little insight to me, but we shall see.
         </p>
 
-        <div class="w3-row w3-padding-large">
-            <p id="contentHead"><b>This Website (Web Application Development)</b></p>
-
-            <p id="content">
-                I made this website in my Second year of University, since then I have reduced the content and keep it loosely up to date.
-                At the time of my module hand-in this web content had more functionality because it was deployed in a PHP webserver with a MySQL database.
-                The content originally had to meet a manditory feature list which included: HTML, JavaScript, JQuery, CSS, Bootstrap, AJAX, and PHP.
-                For this hand-in I received the grade: A (4.0)
-                <br><br>
-                Since then the website has been subject to a significant overhaul, especially in regard to my move to a serverless deployment.
-                I've been keen to use my knowledge of AWS to put this website onto its own web server but the convenience that comes with GitPages has left it here.
-                I am expecting that another project - C2 over DNS is in the list of future projects -  will require the use of my domain for testing and I will potentially redeploy application content at that time.
-            </p>
+        <button class="collapsible"><b>This Website (Web Application Development)</b></button>
+        <div class="content">
+            <br>
+            I made this website in my Second year of University, since then I have reduced the content and keep it loosely up to date.
+            At the time of my module hand-in this web content had more functionality because it was deployed in a PHP webserver with a MySQL database.
+            The content originally had to meet a manditory feature list which included: HTML, JavaScript, JQuery, CSS, Bootstrap, AJAX, and PHP.
+            For this hand-in I received the grade: A (4.0)
+            <br><br>
+            Since then the website has been subject to a significant overhaul, especially in regard to my move to a serverless deployment.
+            I've been keen to use my knowledge of AWS to put this website onto its own web server but the convenience that comes with GitPages has left it here.
+            I am expecting that another project - C2 over DNS is in the list of future projects -  will require the use of my domain for testing and I will potentially redeploy application content at that time.
         </div>
-
-
-        <div class="w3-row w3-padding-large">
-            <p id="contentHead"><b>Digital Forensics Report</b></p>
-
-            <p id="content">
-                The final module in my Second year of Ethical Hacking, Digital Forensics 1, required me to search for evidence of a crime commited on a suspect disk drive which was removed from their computer.
-                The scenario set was that birdwatching was an illegal activity, as such any images of a bird was considered illicit material.
-                After an examination of John Doe's disk drive I was required to collect all of my findings into a court report.
-                This court report required I list my evidence discovered from an impartial perspective, I was also required to outline the steps taken to collect the evidence so that my process can be repeated to re-aquire all of the evidence discovered.
-                For this report I received the grade: B+ (3.5).
-                <br><br>
-                Digital forensics, as a result of this module, holds a special place in my heart.
-                I value the work that investigators have to go through in order to recover evidence of a crime from the devices they are required to search.
-                This is the module that inspired my Dissertation in 4th year.
-            </p>
+        <br>
+        <button class="collapsible"><b>Digital Forensics Report</b></button>
+        <div class="content">
+            <br>
+            The final module in my Second year of Ethical Hacking, Digital Forensics 1, required me to search for evidence of a crime commited on a suspect disk drive which was removed from their computer.
+            The scenario set was that birdwatching was an illegal activity, as such any images of a bird was considered illicit material.
+            After an examination of John Doe's disk drive I was required to collect all of my findings into a court report.
+            This court report required I list my evidence discovered from an impartial perspective, I was also required to outline the steps taken to collect the evidence so that my process can be repeated to re-aquire all of the evidence discovered.
+            For this report I received the grade: B+ (3.5).
+            <br><br>
+            Digital forensics, as a result of this module, holds a special place in my heart.
+            I value the work that investigators have to go through in order to recover evidence of a crime from the devices they are required to search.
+            This is the module that inspired my Dissertation in 4th year.
         </div>
-
-        <div class="w3-row w3-padding-large">
-            <p id="contentHead"><b>Skeleton Key - Group Project</b></p>
-
-            <p id="content">
-                From my Third year at Abertay I worked as part of a group to complete a generic development project.
-                Working as part of a Five person team, we were given a set of briefs and client requirements that we had to either develop a tool for or perform an assessment.
-                Our team had already put a great deal of throught into out project before the Term had started; we planned on developing a physical penetration device framework for the Raspberry Pi Zero W.
-                From a Hardware perspective, our project let us play about with a Pi USB stem and a Blinkt LED GPIO kit which is something we've never played much with.
-                We called our end product Skeleton Key (SK).
-                <br><br>
-                I really enjoyed the mix of hardware and software development; this project was a perfect excuse for all of us to learn Python 3.6 and low level Linux internals.
-                Our SK project, which can be found on GitHub, makes use of the Debian OS kernel modules to emulate generic HID devices when connected to a system via the data USB port on the Pi or through the USB Stem.
-                This framework was developed to simplify this communication with these OS modules and allows for Python 3 scripts to be hotswapped to perform a range of actions.
-                We also chose Python because we wanted an accessable framework for these modules that anyone could pick up and have a go with themselves.
-                <br><br>
-                For this framework we made four modules as examples in a hope to encourage further development.
-                The first module we developed performed network enumeration, this made use of common tools for penetration testers to scan a predetermined range of devices and generate a easy to read report using HTML and Bootstrap.
-                <br><br>
-                Responder, the second module, integrated the SpiderLabs tool Responder to attempt to exfiltrate password hashes from enterprise Windows PC's. SK will then store these internally for later use from the user as the Pi does not have adequate password cracking performance.
-                <br><br>
-                The next module, Storage, allows the user to make use of existing file systems or generate a new file systems to mount over the USB bus.
-                This module was mostly developed to display the frameworks ability to perfom this action and is to be used as part of a larger script.
-                <br><br>
-                Finally, KeyInject was developed to show the frameworks ability to emulate a Keyboard and the inbuild  DuckyScript parser.
-                The KeyInject module tied together these two sections of SKs functionality, the framework will read a DuckyScript file and execute the contained instructions.
-                <br><br>
-                Overall, this was a really enjoyable project that let me experience working alongside an excelent team.
-                I am very proud of not only my work but that of all members of the team.
-                It's a shame that the weeks following this projects completion the Kernel modules regarding Keystroke injection were completely overhauled within Debian so this project could do with a bit of fixing.
-            </p>
+        <br>
+        <button class="collapsible"><b>Skeleton Key - Group Project</b></button>
+        <div class="content">
+            <br>
+            From my Third year at Abertay I worked as part of a group to complete a generic development project.
+            Working as part of a Five person team, we were given a set of briefs and client requirements that we had to either develop a tool for or perform an assessment.
+            Our team had already put a great deal of throught into out project before the Term had started; we planned on developing a physical penetration device framework for the Raspberry Pi Zero W.
+            From a Hardware perspective, our project let us play about with a Pi USB stem and a Blinkt LED GPIO kit which is something we've never played much with.
+            We called our end product Skeleton Key (SK).
+            <br><br>
+            I really enjoyed the mix of hardware and software development; this project was a perfect excuse for all of us to learn Python 3.6 and low level Linux internals.
+            Our SK project, which can be found on GitHub, makes use of the Debian OS kernel modules to emulate generic HID devices when connected to a system via the data USB port on the Pi or through the USB Stem.
+            This framework was developed to simplify this communication with these OS modules and allows for Python 3 scripts to be hotswapped to perform a range of actions.
+            We also chose Python because we wanted an accessable framework for these modules that anyone could pick up and have a go with themselves.
+            <br><br>
+            For this framework we made four modules as examples in a hope to encourage further development.
+            The first module we developed performed network enumeration, this made use of common tools for penetration testers to scan a predetermined range of devices and generate a easy to read report using HTML and Bootstrap.
+            <br><br>
+            Responder, the second module, integrated the SpiderLabs tool Responder to attempt to exfiltrate password hashes from enterprise Windows PC's. SK will then store these internally for later use from the user as the Pi does not have adequate password cracking performance.
+            <br><br>
+            The next module, Storage, allows the user to make use of existing file systems or generate a new file systems to mount over the USB bus.
+            This module was mostly developed to display the frameworks ability to perfom this action and is to be used as part of a larger script.
+            <br><br>
+            Finally, KeyInject was developed to show the frameworks ability to emulate a Keyboard and the inbuild  DuckyScript parser.
+            The KeyInject module tied together these two sections of SKs functionality, the framework will read a DuckyScript file and execute the contained instructions.
+            <br><br>
+            Overall, this was a really enjoyable project that let me experience working alongside an excelent team.
+            I am very proud of not only my work but that of all members of the team.
+            It's a shame that the weeks following this projects completion the Kernel modules regarding Keystroke injection were completely overhauled within Debian so this project could do with a bit of fixing.
         </div>
-
-        <div class="w3-row w3-padding-large">
-            <p id="contentHead"><b>Scottish Buisness Resilience Centre - Curious Frank</b></p>
-
-            <p id="content">
-                To stray from the norm, not a project but instead a summary of an interesting job I managed to grab during my studies.
-                During my final year of University I was able to gain employment as a Ethical Hacking Consultant with SBRC as part of the Curious Frank Team.
-                This experience allowed me to practice my skills accumulated from my studies.
-                Working this zero-hour position allowed me to pick up both on-site and remote work as it suited my needs.
-                <br><br>
-                I very much enjoyed the hands on experience with clients that was part of my duties.
-                Working with clients was always something that I would have lacked as part of my studies and I am glad this work allowed me to practice this skill in the best way possible; by throwing me into the deep end.
-                Overall this was an fantastic opportunity that helped push me into a consultant lifestyle; I am thankful for the opportunity to work here before leaving University.
-            </p>
+        <br>
+        <button class="collapsible"><b>Scottish Buisness Resilience Centre - Curious Frank</b></button>
+        <div class="content">
+            <br>
+            To stray from the norm, not a project but instead a summary of an interesting job I managed to grab during my studies.
+            During my final year of University I was able to gain employment as a Ethical Hacking Consultant with SBRC as part of the Curious Frank Team.
+            This experience allowed me to practice my skills accumulated from my studies.
+            Working this zero-hour position allowed me to pick up both on-site and remote work as it suited my needs.
+            <br><br>
+            I very much enjoyed the hands on experience with clients that was part of my duties.
+            Working with clients was always something that I would have lacked as part of my studies and I am glad this work allowed me to practice this skill in the best way possible; by throwing me into the deep end.
+            Overall this was an fantastic opportunity that helped push me into a consultant lifestyle; I am thankful for the opportunity to work here before leaving University.
         </div>
-
-        <div class="w3-row w3-padding-large">
-            <p id="contentHead"><b>Aletheia File Header/Footer search - Dissertation</b></p>
-
-            <p id="content">
-                I decided with the year of research ahead of me that I wanted to development a tool that makes use of General Purpose Graphical Processing Unit (GPGPU) assets.
-                To meet this goals I focused my investigation of the file carving process into accelerating the file carving header/footer search using GPGPUs.
-                This turned out to be a much larger challenge than I originally intended as many of these projects do.
-                Development was difficult and I was unable to reach my original goal of a full GPU enabled file carver.
-                <br>
-                Regardless of the difficulty endured the final product, Aletheia, was able to well outperform existing CPU bound Open Source File carvers when they were in audit mode (A mode where the actual carving out of the files is not performed).
-                Furthermore, as the only other existing tool for GPGPU File Carving is written to only operate on the Windows operating system I was pleased that this project is able to be developed into the first cross platform file carver for GPGPU technology.
-                I intend to continue development in the years to come as this project means alot to me with the hope that it could be used in a law enforcement capacity.
-            </p>
+        <br>
+        <button class="collapsible"><b>Aletheia File Header/Footer search - Dissertation</b></button>
+        <div class="content">
+            <br>
+            I decided with the year of research ahead of me that I wanted to development a tool that makes use of General Purpose Graphical Processing Unit (GPGPU) assets.
+            To meet this goals I focused my investigation of the file carving process into accelerating the file carving header/footer search using GPGPUs.
+            This turned out to be a much larger challenge than I originally intended as many of these projects do.
+            Development was difficult and I was unable to reach my original goal of a full GPU enabled file carver.
+            <br>
+            Regardless of the difficulty endured the final product, Aletheia, was able to well outperform existing CPU bound Open Source File carvers when they were in audit mode (A mode where the actual carving out of the files is not performed).
+            Furthermore, as the only other existing tool for GPGPU File Carving is written to only operate on the Windows operating system I was pleased that this project is able to be developed into the first cross platform file carver for GPGPU technology.
+            I intend to continue development in the years to come as this project means alot to me with the hope that it could be used in a law enforcement capacity.
         </div>
-
+        <br>
         <p>
             There is always more to be written up and even more to be done but that's all my good projects for now.
             If you would like any more information on my projects then the links below should take you to means of contact.
@@ -138,7 +128,6 @@
             I try my best to keep it up to date and more-so than the rest of the site.
         </p>
     </div>
-
     <!-- Footer -->
     <footer class="w3-center w3-padding-16 w3-opacity w3-hover-opacity-off">
         <div class="w3-xlarge w3-padding-32">
