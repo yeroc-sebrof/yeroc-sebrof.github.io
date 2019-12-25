@@ -9,10 +9,4 @@ $(document).ready(function () {
         $(".contact").toggle(500);
         $('html, body').animate({scrollTop: '+=400px'}, 450);
     });
-
-    $("#headerPadding").click(function () {
-        document.getElementById('contentStart').scrollIntoView({
-             behavior: 'smooth'
-        });
-    });
 });
