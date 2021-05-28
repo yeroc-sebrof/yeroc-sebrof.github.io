@@ -1,4 +1,7 @@
 ## yeroc-sebrof.github.io
 
-### Problems
-  * There is no way to dynamically load content without modifying the page
+### TODO
+- Move to a Jekyll Markdown theme?
+  - Can make my current theme a new Jekyll one
+- Add a section about my books and cooking and more personal stuff, like https://offog.org/?
+- List achievements more regularly?
